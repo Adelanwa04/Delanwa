@@ -1,5 +1,7 @@
 Ford GoBike Data Visualization
 by Taiwo Adelanwa
+
+
 Dataset
 The Ford GoBike system dataset provides anonymized, timestamped data about the start- and end- station for a bike, the user type (subscriber or casual rider), as well as some customer-reported attributes like birth year and gender. This data set includes information about individual rides made in a bike-sharing system covering the greater San Francisco Bay area. This project analyzes the data collected from users of the GoBike program.
 
