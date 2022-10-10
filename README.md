@@ -33,4 +33,4 @@ From my analysis, I was able to note that long distant rides were rarely taken. 
 Key Insights for Presentation
 For my presentation, I will focus on the difference in usage for customers and subscribers. On the later plots, I will show how gender and age groups come into play. I will first show the univariate results, such as usage on days of the week, time of the day. I will then continue to see how adding more variables influences the results. My conclusion is that whether age group has the biggest influence on results, compared to gender.
 
-​
+
