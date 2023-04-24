@@ -1,42 +1,37 @@
-# Ford GoBike Data Visualization
+
+# Sales Analysis Visualization
 
 # by Taiwo Adelanwa
 
-
 # Dataset
+Sales analytics is the practice of generating insights from sales data, trends, and metrics to set targets and forecast future sales performance. Sales analysis is mining your data to evaluate the performance of your sales team against its goals. It provides insights about the top performing and underperforming products/services, the problems in selling and market opportunities, sales forecasting, and sales activities that generate revenue.
 
-The Ford GoBike system dataset provides anonymized, timestamped data about the start- and end- station for a bike, the user type (subscriber or casual rider), as well as some customer-reported attributes like birth year and gender. This data set includes information about individual rides made in a bike-sharing system covering the greater San Francisco Bay area. This project analyzes the data collected from users of the GoBike program.
+# This dataset include 186848 rows with 6 columns data entries;
 
-This dataset includes 183412 rows and 16 columns data entries:
+Order ID - An Order ID is the number system that Amazon uses exclusively to keep track of orders. Each order receives its own Order ID that will not be duplicated. This number can be useful to the seller when attempting to find out certain details about an order such as shipment date or status.
+Product - The product that have been sold.
+Quantity Ordered - Ordered Quantity is the total item quantity ordered in the initial order (without any changes).
+Price Each - The price of each products.
+Order Date - This is the date the customer is requesting the order be shipped.
+Purchase Address - The purchase order is prepared by the buyer, often through a purchasing department. The purchase order, or PO, usually includes a PO number, which is useful in matching shipments with purchases; a shipping date; billing address; shipping address; and the request items, quantities
+I did some wrangling which included:
 
-- An ID number for each bicycle
-- How long it was rented for, in seconds
-- The beginning and end staton ID, latitude, longitude and station name
-- Start time and end time
--  The birth year of users
-- Gender of the users
-- Subsription type of users, among others
-
- I did some wrangling which included:
-
-- Categorising start_station_id, end_station_id, user_type, member_gender, bike_share_for_all_trip
-- Converting bike_id to string
-- Adding a column for distance in kilometers, based on the longitude and latitude start and end points (feature engineering)
-- Calculating the users' age from users' birth year
-- Adding age group column from users' age
-- Extracting days of the week and time of the day from start time
-- Converting time of the day from 24hr to 12hr time
+Dropping missing values
+Converting quantity ordered and price each to interger
+Calculating sales from quantity ordered and price each
+Extracting month from order date and converting to interger
+Extracting year from order date and converting to interger
+Extracting city from purchase address
+What was the best Year for sales? How much was earned that Year? What was the best month for sales? How much was earned that month? What City had the highest number of sales? What time should we display adverstisement to maximize likelihood of customer's buying product? What products are most often sold together? What product sold the most? Why do you think it sold the most?
 
 # Summary of Findings
+I was able discover different trends and uncover insights when i analysed Sales dataset.The quaterly total sales analysis showed that we made considerable amount of sales in the 4th quater with over 11M with the 2nd quater looking great too with over 9M in sales. Uncovering more insights in our analysis, the monthly sales showed we made the most sales in December with over 4M, October and April was also impressive with us making over 3M.
 
-- I was able discover different trends and uncover insights when i analysed FordGo Bike dataset. Most of the trips travelled for 500-800 seconds per ride with a frequency of more than 12,000. Most riders are male accounting for over 120,000 rides which is more than double the female and other gender combined. I also discovered that 89.2% of rides were from subscribers, while just 10.8% were customers paying daily.
+As we have our products in almost all cities in United States, an analysis was done to show the city sales distribution which showed that San Francisco is the top of the pile making over 8M. Los Angeles , New York City, Boston and Atlanta also made sales of over 5M, 4M, 3M and 2M respectively. Strategies in advertisement can maximize the likelihood of customers buying our product. I was also able to get more insight from this analysis, we made more sales at 12pm and 7pm and this the best time to display advertisement for our products.
 
-- Suprisingly, I discovered more than 20,000 bike trips were taken at 8am and 5pm on Tuesdays and Thursdays. The time of the day is when the weather is expected to be cooler and conducive for relaxation and riding.The majority of users are middle-aged adult with over 120,000 rides with both adolescents and old-aged adults following in distance with about 20,000 riders respectively. This is to be expected as the middle-aged adult tend to be more adventurous.
+NB: Numbers associated with sales are in '$'
 
-- From my analysis, I was able to note that long distant rides were rarely taken. Most of the rides are of short distances with short durations. Which lies in the range of under 30000 secs and 9 Kms. Also, most of the trips were taken by Middle-aged Adult(25 - 44yrs) which was on Thurdays and Tuesdays. Seniors(65+ yrs) took the least trips in all days of the week.
+# Limitation
+This analysis was limited as more analysis can be done to understand sales in each state and their differences in relation to time of advertisement for our products. The quaterly and monthly analysis of sales per state. The difference in prefernce of each products by state.
 
-# Key Insights for Presentation
-
-For my presentation, I will focus on the difference in usage for customers and subscribers. On the later plots, I will show how gender and age groups come into play. I will first show the univariate results, such as usage on days of the week, time of the day. I will then continue to see how adding more variables influences the results. My conclusion is that whether age group has the biggest influence on results, compared to gender.
-
-
+ 
